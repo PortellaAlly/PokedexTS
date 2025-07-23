@@ -1,0 +1,9 @@
+<h1>{{nome}}</h1>
+<img src="{{img}}" />
+<p>Altura</p>
+<p>Peso</p>
+<form>
+  <label>Nome: </label>
+  <input type="text" name="poke-nome" [(ngModel)]="nomePesquisa" />
+  <button (click)="pesquisar()">Pesquisar</button>
+</form>
