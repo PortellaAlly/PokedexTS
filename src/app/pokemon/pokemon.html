@@ -1,9 +1,19 @@
-<h1>{{nome}}</h1>
-<img src="{{img}}" />
-<p>Altura: {{altura/10}}</p>
-<p>Peso: {{peso/10}}</p>
-<form>
-  <label>Nome: </label>
-  <input type="text" name="poke-nome" [(ngModel)]="nomePesquisa" />
-  <button (click)="pesquisar()">Pesquisar</button>
-</form>
+<div class="container">
+  <h1 class="titulo">{{nome}}</h1>
+
+  <img class="imagem" src="{{img}}" alt="{{nome}}" />
+
+  <p class="info">Altura: {{altura / 10}} m</p>
+  <p class="info">Peso: {{peso / 10}} kg</p>
+
+  <form class="formulario">
+    <label class="rotulo">Nome:</label>
+    <input
+      type="text"
+      name="poke-nome"
+      [(ngModel)]="nomePesquisa"
+      class="campo"
+    />
+    <button (click)="pesquisar()" type="button" class="botao">Pesquisar</button>
+  </form>
+</div>
