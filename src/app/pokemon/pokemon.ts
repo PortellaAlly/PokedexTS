@@ -14,6 +14,8 @@ export class Pokemon {
   public nome:string = '';
   public img:string = '';
   public nomePesquisa = '';
+  public altura : number= 0;
+  public peso : number= 0;
 
   constructor(private http:HttpClient){
       this.pesquisar()
@@ -26,6 +28,8 @@ export class Pokemon {
       .subscribe(dados => {
         this.nome = dados.name;
         this.img = dados.sprites.front_default;
+        this.altura = dados.height;
+        this.peso = dados.weight;
         console.log(dados);
       });
     }
