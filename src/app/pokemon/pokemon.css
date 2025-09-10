@@ -54,16 +54,25 @@
 }
 
 .campo {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ccc;          /* borda um pouco mais grossa */
+  border-radius: 12px;             /* bordas arredondadas */
+  font-size: 16px;
+  transition: all 0.3s ease;       /* animação suave para foco */
+  width: 250px;                     /* largura fixa */
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.campo::placeholder {
+  color: #ddd;                     /* cor do placeholder */
+  font-style: italic;
 }
 
 .card {
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   margin: 0;            /* remove margens */
   width: 100vw;         /* ocupa toda a largura da viewport */
