@@ -4,29 +4,29 @@
     <img class="imagem" src="{{img}}" alt="{{nome}}" />
   </div>
 
-  <h1 class="titulo">{{nome}}</h1>
   <div class="pesalt">
-  <p class="tipo" [ngClass]="tipo1">{{tipo1}}</p><br>
-  <p class="tipo" [ngClass]="tipo2">{{tipo2}}</p><br>
+    <span class="tipo-badge" [ngClass]="tipo1">{{tipo1}}</span>
+    <span class="tipo-badge" *ngIf="tipo2" [ngClass]="tipo2">{{tipo2}}</span>
   </div>
+
   <div class="pesalt">
     <p class="info">{{altura / 10}} M</p>
     <p class="info">{{peso / 10}} KG</p>
   </div>
   <div class="pesalt">
-    <p class="infobaixo"> Altura</p>
-    <p class="infobaixo"> Peso</p>
+    <p class="infobaixo"> Altura </p>
+    <p class="infobaixo"> Peso </p>
   </div>
-  
-  <br><br><h1>Base stats</h1>
+
+  <br><br>
 
   <p class="info">HP: {{hp}}</p>
   <p class="info">ATK: {{ataque}}</p>
   <p class="info">DEF: {{defesa}}</p>
   <p class="info">AGI: {{agilidade}}</p>
 
-    <form class="formulario">
-      <label class="rotulo">Pesquisar</label>
-      <input type="text" name="poke-nome" [(ngModel)]="nomePesquisa" class="campo" (keyup.enter)="pesquisar()" />
-    </form>
+  <form class="formulario">
+    <label class="rotulo">Pesquisar</label>
+    <input type="text" name="poke-nome" [(ngModel)]="nomePesquisa" class="campo" (keyup.enter)="pesquisar()" />
+  </form>
 </div>

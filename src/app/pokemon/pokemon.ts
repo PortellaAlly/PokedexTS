@@ -39,11 +39,10 @@ export class Pokemon {
         this.peso = dados.weight;
         this.hp = dados.stats[0].base_stat;
         this.tipo1 = dados.types[0].type.name;
-        this.tipo2 = dados.types[1].type.name;
+        this.tipo2 = dados.types.length > 1 ? dados.types[1].type.name : '';
         this.ataque = dados.stats[1].base_stat;
         this.defesa = dados.stats[2].base_stat;
         this.agilidade = dados.stats[5].base_stat;
-
 
         console.log(dados);
       });

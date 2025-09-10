@@ -170,3 +170,16 @@
 .stats{
   
 }
+
+.tipo-badge {
+  display: inline-block;
+  padding: 6px 16px;         /* dá mais largura */
+  border-radius: 12px;       /* bordas arredondadas */
+  font-size: 14px;
+  gap: 5px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  min-width: 60px;           /* garante largura mínima */
+  text-align: center;
+}
