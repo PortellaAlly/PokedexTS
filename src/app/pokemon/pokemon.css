@@ -167,10 +167,6 @@
   color: white;
 }
 
-.stats{
-  
-}
-
 .tipo-badge {
   display: inline-block;
   padding: 6px 16px;         /* dá mais largura */
@@ -182,4 +178,26 @@
   text-transform: uppercase;
   min-width: 60px;           /* garante largura mínima */
   text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+  width: 220px; /* controla largura do bloco */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between; /* nome do status de um lado, valor do outro */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }
