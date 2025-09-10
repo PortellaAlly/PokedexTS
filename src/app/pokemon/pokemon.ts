@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-pokemon',
-  imports: [ FormsModule ],
+  imports: [ FormsModule, CommonModule ],
   templateUrl: './pokemon.html',
   styleUrl: './pokemon.css'
 
@@ -17,7 +18,7 @@ export class Pokemon {
   public altura : number= 0;
   public peso : number= 0;
   public hp : number=0;
-  
+  public tipo: string = '';
 
   constructor(private http:HttpClient){
       this.pesquisar()
@@ -33,6 +34,8 @@ export class Pokemon {
         this.altura = dados.height;
         this.peso = dados.weight;
         this.hp = dados.stats[0].base_stat;
+        this.tipo = dados.types[0].type.name;
+
         console.log(dados);
       });
     }

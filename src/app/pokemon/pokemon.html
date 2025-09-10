@@ -1,20 +1,26 @@
 <div class="container">
+
+  <div class="card" [ngClass]="tipo">
+    <img class="imagem" src="{{img}}" alt="{{nome}}" />
+  </div>
+
   <h1 class="titulo">{{nome}}</h1>
+  <p class="tipo">{{tipo}}</p><br>
 
-  <img class="imagem" src="{{img}}" alt="{{nome}}" />
+  <div class="pesalt">
+    <p class="info">{{altura / 10}} M</p>
+    <p class="info">{{peso / 10}} KG</p>
+  </div>
+  <div class="pesalt">
+    <p class="infobaixo"> Altura</p>
+    <p class="infobaixo"> Peso</p>
+  </div>
+  
 
-  <p class="info">Altura: {{altura / 10}} m</p>
-  <p class="info">Peso: {{peso / 10}} kg</p>
   <p class="info">HP: {{hp}}</p>
 
-  <form class="formulario">
-    <label class="rotulo">Nome:</label>
-    <input
-      type="text"
-      name="poke-nome"
-      [(ngModel)]="nomePesquisa"
-      class="campo"
-    />
-    <button (click)="pesquisar()" type="button" class="botao">Pesquisar</button>
-  </form>
+    <form class="formulario">
+      <label class="rotulo">Pesquisar</label>
+      <input type="text" name="poke-nome" [(ngModel)]="nomePesquisa" class="campo" (keyup.enter)="pesquisar()" />
+    </form>
 </div>
