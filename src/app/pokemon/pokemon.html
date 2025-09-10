@@ -1,12 +1,14 @@
 <div class="container">
 
-  <div class="card" [ngClass]="tipo">
+  <div class="card" [ngClass]="tipo1">
     <img class="imagem" src="{{img}}" alt="{{nome}}" />
   </div>
 
   <h1 class="titulo">{{nome}}</h1>
-  <p class="tipo">{{tipo}}</p><br>
-
+  <div class="pesalt">
+  <p class="tipo" [ngClass]="tipo1">{{tipo1}}</p><br>
+  <p class="tipo" [ngClass]="tipo2">{{tipo2}}</p><br>
+  </div>
   <div class="pesalt">
     <p class="info">{{altura / 10}} M</p>
     <p class="info">{{peso / 10}} KG</p>
@@ -16,8 +18,12 @@
     <p class="infobaixo"> Peso</p>
   </div>
   
+  <br><br><h1>Base stats</h1>
 
   <p class="info">HP: {{hp}}</p>
+  <p class="info">ATK: {{ataque}}</p>
+  <p class="info">DEF: {{defesa}}</p>
+  <p class="info">AGI: {{agilidade}}</p>
 
     <form class="formulario">
       <label class="rotulo">Pesquisar</label>

@@ -1,168 +1,172 @@
 .container {
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .titulo {
-    font-size: 24px;
-    color: white;
-    margin-bottom: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .imagem {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    margin-bottom: 16px;
-  }
-  
-  .info {
-    font-size: 26px;
-    color: white;
-    margin: 4px 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .infobaixo {
-    font-size: 14px;
-    color: grey;
-    margin: 4px 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .formulario {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    align-items: stretch;
-    padding: 8px 10px;
-    width: fit-content;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .rotulo {
-    text-align: left;
-    font-weight: bold;
-    color: #444;
-  }
-  
-  .campo {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    flex: 1;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 0;
-  
-    /* só arredonda embaixo */
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  
-    /* se não quiser nada em cima, deixa assim */
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
-  /* Tipos */
-  .normal {
-    background-color: #A8A77A;
-  }
-  
-  .fire {
-    background-color: #EE8130;
-  }
-  
-  .water {
-    background-color: #6390F0;
-  }
-  
-  .electric {
-    background-color: #F7D02C;
-    color: black; /* melhor contraste */
-  }
-  
-  .grass {
-    background-color: #7AC74C;
-  }
-  
-  .ice {
-    background-color: #96D9D6;
-    color: black;
-  }
-  
-  .fighting {
-    background-color: #C22E28;
-  }
-  
-  .poison {
-    background-color: #A33EA1;
-  }
-  
-  .ground {
-    background-color: #E2BF65;
-    color: black;
-  }
-  
-  .flying {
-    background-color: #A98FF3;
-  }
-  
-  .psychic {
-    background-color: #F95587;
-  }
-  
-  .bug {
-    background-color: #A6B91A;
-  }
-  
-  .rock {
-    background-color: #B6A136;
-  }
-  
-  .ghost {
-    background-color: #735797;
-  }
-  
-  .dragon {
-    background-color: #6F35FC;
-  }
-  
-  .dark {
-    background-color: #705746;
-  }
-  
-  .steel {
-    background-color: #B7B7CE;
-    color: black;
-  }
-  
-  .fairy {
-    background-color: #D685AD;
-  }  
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
-  .pesalt{
-    display: flex;
-    gap: 20px; /* espaço entre os elementos */
-    align-items: center; /* alinha verticalmente */
-    display: flex;
-    justify-content: center;
-  }
 
-  .tipo{
-    display: flex;
-    justify-content: center;
-    color: white;
-  }
+.titulo {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.imagem {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.info {
+  font-size: 26px;
+  color: white;
+  margin: 4px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.infobaixo {
+  font-size: 14px;
+  color: grey;
+  margin: 1px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formulario {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  padding: 8px 10px;
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotulo {
+  text-align: left;
+  font-weight: bold;
+  color: #444;
+}
+
+.campo {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 0;            /* remove margens */
+  width: 100vw;         /* ocupa toda a largura da viewport */
+  border-radius: 0;     
+  border-bottom-left-radius: 20px;  
+  border-bottom-right-radius: 20px;
+}
+
+
+/* Tipos */
+.normal {
+  background-color: #A8A77A;
+}
+
+.fire {
+  background-color: #EE8130;
+}
+
+.water {
+  background-color: #6390F0;
+}
+
+.electric {
+  background-color: #F7D02C;
+  color: black;
+  /* melhor contraste */
+}
+
+.grass {
+  background-color: #7AC74C;
+}
+
+.ice {
+  background-color: #96D9D6;
+  color: black;
+}
+
+.fighting {
+  background-color: #C22E28;
+}
+
+.poison {
+  background-color: #A33EA1;
+}
+
+.ground {
+  background-color: #E2BF65;
+  color: black;
+}
+
+.flying {
+  background-color: #A98FF3;
+}
+
+.psychic {
+  background-color: #F95587;
+}
+
+.bug {
+  background-color: #A6B91A;
+}
+
+.rock {
+  background-color: #B6A136;
+}
+
+.ghost {
+  background-color: #735797;
+}
+
+.dragon {
+  background-color: #6F35FC;
+}
+
+.dark {
+  background-color: #705746;
+}
+
+.steel {
+  background-color: #B7B7CE;
+  color: black;
+}
+
+.fairy {
+  background-color: #D685AD;
+}
+
+.pesalt {
+  display: flex;
+  gap: 20px;
+  /* espaço entre os elementos */
+  align-items: center;
+  /* alinha verticalmente */
+  display: flex;
+  justify-content: center;
+}
+
+.tipo {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.stats{
+  
+}
